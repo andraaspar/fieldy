@@ -1,0 +1,10 @@
+.p-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.p-col-auto {
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+}

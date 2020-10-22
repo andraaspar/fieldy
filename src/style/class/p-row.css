@@ -1,0 +1,19 @@
+.p-row {
+	display: flex;
+}
+
+.p-row-auto {
+	display: flex;
+	overflow: auto;
+}
+
+.p-row-wrap {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p-row-auto-wrap {
+	display: flex;
+	overflow: auto;
+	flex-wrap: wrap;
+}

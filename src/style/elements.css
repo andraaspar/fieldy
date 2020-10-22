@@ -1,0 +1,146 @@
+* {
+	box-sizing: border-box;
+	word-break: break-word;
+}
+
+html {
+	height: 100%;
+
+	background-color: var(--Gray-3);
+	color: var(--White);
+
+	font-size: 10px; /* rem */
+}
+
+body {
+	height: 100%;
+
+	font-family: ui-sans-serif, sans-serif;
+	font-size: var(--FontSize-Normal);
+	line-height: var(--LineHeight-Normal);
+
+	tab-size: 4;
+	word-wrap: break-word;
+}
+
+::selection {
+	color: var(--White);
+	background-color: var(--Teal-9);
+}
+
+:focus:focus {
+	outline: none;
+	border-color: var(--Teal-8);
+}
+
+#root {
+	display: flex;
+	height: 100%;
+}
+
+a {
+	color: var(--Blue-8);
+	text-decoration: underline;
+}
+
+a:hover {
+	text-decoration-thickness: 0.2rem;
+}
+
+a:active {
+	color: var(--Blue-6);
+}
+
+a:visited {
+	color: var(--Teal-6);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 100;
+}
+
+h1 {
+	font-size: var(--FontSize-H1);
+}
+h2 {
+	font-size: var(--FontSize-H2);
+}
+h3 {
+	font-size: var(--FontSize-H3);
+}
+h4 {
+	font-size: var(--FontSize-H4);
+}
+h5 {
+	font-size: var(--FontSize-H5);
+}
+h6 {
+	font-size: var(--FontSize-H6);
+}
+
+button {
+	border: 1px solid var(--White-2);
+	background-color: var(--White-2);
+	color: var(--White-8);
+
+	padding: var(--ButtonPadding);
+	border-radius: var(--Radius);
+	user-select: none;
+	touch-action: manipulation;
+	cursor: pointer;
+
+	box-shadow: var(--Shadow-Button);
+}
+
+button:hover {
+	background-color: var(--White-3);
+	color: var(--White);
+}
+
+button:active {
+	background-color: var(--White-4);
+	box-shadow: inset var(--Shadow-Button);
+}
+
+button:disabled {
+	cursor: unset;
+	touch-action: auto;
+
+	background-color: var(--White-1);
+	border-color: var(--White-1);
+	color: var(--White-4);
+	box-shadow: none;
+}
+
+input:not([type]),
+input[type='text'] {
+	background-color: var(--White-2);
+	border: 1px solid var(--White-2);
+	padding: var(--ButtonPadding);
+	color: var(--White);
+	border-radius: var(--Radius);
+	box-shadow: inset var(--Shadow-Button);
+}
+
+input:not([type]):disabled,
+input[type='text']:disabled {
+	background-color: var(--White-1);
+	border: 1px solid var(--White-1);
+	color: var(--White-4);
+	box-shadow: none;
+}

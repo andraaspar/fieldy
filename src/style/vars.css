@@ -1,0 +1,116 @@
+:root {
+	--Gray-1: #08080b;
+	--Gray-2: #111117;
+	--Gray-3: #1d1f28;
+	--Gray-4: #2f333e;
+	--Gray-5: #4d5362;
+	--Gray-6: #828d9f;
+	--Gray-7: #a4b2c3;
+	--Gray-8: #bdcddb;
+	--Gray-9: #d1e1ec;
+	--Gray-10: #e2f0f8;
+
+	--Green-1: #011000;
+	--Green-2: #002900;
+	--Green-3: #004203;
+	--Green-4: #005b09;
+	--Green-5: #007511;
+	--Green-6: #108e29;
+	--Green-7: #31a74e;
+	--Green-8: #5bc079;
+	--Green-9: #8dd9a8;
+	--Green-10: #c9f2da;
+
+	--Red-1: #110000;
+	--Red-2: #2b0002;
+	--Red-3: #440007;
+	--Red-4: #5e000e;
+	--Red-5: #770018;
+	--Red-6: #900f2f;
+	--Red-7: #aa3357;
+	--Red-8: #c36183;
+	--Red-9: #dd99b4;
+	--Red-10: #f6dbe7;
+
+	--Blue-1: #000611;
+	--Blue-2: #00102b;
+	--Blue-3: #001e44;
+	--Blue-4: #002e5e;
+	--Blue-5: #004277;
+	--Blue-6: #0f5e90;
+	--Blue-7: #3382aa;
+	--Blue-8: #61a8c3;
+	--Blue-9: #99cedd;
+	--Blue-10: #dbf2f6;
+
+	--Teal-1: #000e11;
+	--Teal-2: #00242b;
+	--Teal-3: #003d44;
+	--Teal-4: #00585e;
+	--Teal-5: #007677;
+	--Teal-6: #0f908b;
+	--Teal-7: #33aa9e;
+	--Teal-8: #61c3b4;
+	--Teal-9: #99ddcf;
+	--Teal-10: #dbf6ef;
+
+	--Orange-1: #110600;
+	--Orange-2: #2b1000;
+	--Orange-3: #441c00;
+	--Orange-4: #5e2a00;
+	--Orange-5: #773a00;
+	--Orange-6: #90530f;
+	--Orange-7: #aa7633;
+	--Orange-8: #c39c61;
+	--Orange-9: #ddc599;
+	--Orange-10: #f6eedb;
+
+	--Black-0: rgba(0, 0, 0, 0);
+	--Black-1: rgba(0, 0, 0, 0.1);
+	--Black-2: rgba(0, 0, 0, 0.2);
+	--Black-3: rgba(0, 0, 0, 0.3);
+	--Black-4: rgba(0, 0, 0, 0.4);
+	--Black-5: rgba(0, 0, 0, 0.5);
+	--Black-6: rgba(0, 0, 0, 0.6);
+	--Black-7: rgba(0, 0, 0, 0.7);
+	--Black-8: rgba(0, 0, 0, 0.8);
+	--Black-9: rgba(0, 0, 0, 0.9);
+	--Black: #000000;
+
+	--White-0: rgba(255, 255, 255, 0);
+	--White-1: rgba(255, 255, 255, 0.1);
+	--White-2: rgba(255, 255, 255, 0.2);
+	--White-3: rgba(255, 255, 255, 0.3);
+	--White-4: rgba(255, 255, 255, 0.4);
+	--White-5: rgba(255, 255, 255, 0.5);
+	--White-6: rgba(255, 255, 255, 0.6);
+	--White-7: rgba(255, 255, 255, 0.7);
+	--White-8: rgba(255, 255, 255, 0.8);
+	--White-9: rgba(255, 255, 255, 0.9);
+	--White: #ffffff;
+
+	--FontSize-Normal: 1.4rem;
+
+	--FontSize-H6: calc(var(--FontSize-Normal) * 1.1);
+	--FontSize-H5: calc(var(--FontSize-H6) * 1.1);
+	--FontSize-H4: calc(var(--FontSize-H5) * 1.1);
+	--FontSize-H3: calc(var(--FontSize-H4) * 1.1);
+	--FontSize-H2: calc(var(--FontSize-H3) * 1.1);
+	--FontSize-H1: calc(var(--FontSize-H2) * 1.1);
+
+	--FontSize-Small: calc(var(--FontSize-Normal) / 1.1);
+	--FontSize-Tiny: calc(var(--FontSize-Small) / 1.1);
+
+	--LineHeight-Normal: calc(20 / 14);
+
+	--ButtonPadding-Top: 0.4rem;
+	--ButtonPadding-Bottom: 0.6rem;
+	--ButtonPadding-X: 1rem;
+	--ButtonPadding: var(--ButtonPadding-Top) var(--ButtonPadding-X)
+		var(--ButtonPadding-Bottom);
+
+	--Radius: 0.6rem;
+
+	--Shadow-Button: 0 0.1rem 0.3rem var(--Black-6);
+	--Shadow-Button: 0 0.1rem 0.3rem var(--Black-6);
+}
