@@ -4974,6 +4974,11 @@ fsevents@^1.2.7:
     bindings "^1.5.0"
     nan "^2.12.1"
 
+fun-q@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/fun-q/-/fun-q-0.3.1.tgz#1949b0baca56665e88ce423bae2b5b526521bbad"
+  integrity sha512-tTq2OyjKffIVHd1insiKsk0Ksf5CmxGxKcCKxhFEq3UU4fJWgV1uJNlBMR68pZIC1KcDZF8BejpaGlcVbd40aw==
+
 function-bind@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/function-bind/-/function-bind-1.1.1.tgz#a56899d3ea3c9bab874bb9773b7c5ede92f4895d"
@@ -5465,6 +5470,13 @@ ignore@^4.0.6:
   version "4.0.6"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==
+
+illa@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/illa/-/illa-16.0.1.tgz#fc6027adab2246a5ca913f92ef2f292cd884a43c"
+  integrity sha512-4PqzMpMf9nWbSF7E2VZJm+jyXt6X0O95twBRHHaZxVHCQaLgMLnfWk/0qFPqirOeZXRzoDN+Y8W8MWR59QEXgA==
+  dependencies:
+    fun-q "^0.3.1"
 
 immer@1.10.0:
   version "1.10.0"

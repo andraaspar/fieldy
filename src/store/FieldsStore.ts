@@ -1,3 +1,4 @@
+import { jsonFromUri, jsonToUri } from 'illa/JsonUtil'
 import { Store } from 'pullstate'
 import { Field } from '../model/Field'
 
@@ -8,30 +9,32 @@ export interface IFieldsStore {
 	nextFieldIndex: number
 }
 
-export const FieldsStore = new Store<IFieldsStore>(
-	loadFromHash() || {
+export const FieldsStore = new Store<IFieldsStore>(loadFromHash())
+
+function makeDefaultValue(): IFieldsStore {
+	return {
 		nextFieldIndex: 1,
 		fieldsById: {},
 		fieldsOrder: [],
 		selectedFieldId: undefined,
-	},
-)
+	}
+}
 
-function loadFromHash(): IFieldsStore | null {
+function loadFromHash(): IFieldsStore {
 	try {
-		return JSON.parse(decodeURIComponent(window.location.hash.slice(1)))
+		return jsonFromUri(window.location.hash.slice(1)) || makeDefaultValue()
 	} catch (e) {
-		return null
+		return makeDefaultValue()
 	}
 }
 
 FieldsStore.subscribe(
 	(s) => s,
 	(s) => {
-		window.history.replaceState(
-			undefined,
-			'',
-			`#${encodeURIComponent(JSON.stringify(s))}`,
-		)
+		window.history.replaceState(undefined, '', `#${jsonToUri(s)}`)
 	},
 )
+
+window.addEventListener('hashchange', (e) => {
+	FieldsStore.update(() => loadFromHash())
+})
