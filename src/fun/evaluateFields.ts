@@ -79,6 +79,25 @@ for (const math of [mathNumber, mathDecimal, mathFraction]) {
 	// 		return fractionToNumber(f)
 	// 	},
 	// })
+
+	math.import!(
+		{
+			f_join: math.typed!('f_join', {
+				'Matrix | Array': function (x: any) {
+					return math.flatten!(x).valueOf().join('')
+				},
+				'...string': function (x: any[]) {
+					return x.join('')
+				},
+			}),
+			f_re: math.typed!('f_re', {
+				'string, string': function (pattern: string, flags: string) {
+					return new RegExp(pattern, flags)
+				},
+			}),
+		},
+		{},
+	)
 }
 
 export function evaluateFields() {
